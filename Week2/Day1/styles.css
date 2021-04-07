@@ -1,0 +1,38 @@
+#h2_2{
+        color: #0000FF;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        text-decoration: underline;
+        cursor: not-allowed;
+}
+body{
+    background-color: chartreuse;
+    background-image: url("images/acaciatexture.png");
+    background-size: 5%;
+}
+a:link{
+    font-family: cursive;
+    font-weight: bolder;
+    color:crimson;
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    border: 10px solid royalblue;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+a:visited{
+    font-family: cursive;
+    font-weight: bolder;
+    color:crimson;
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    border: 10px solid royalblue;
+    text-align: center;
+}
+a:hover{
+    border: none;
+    color: chartreuse;
+}
+a:active{
+    color: yellow;
+}
