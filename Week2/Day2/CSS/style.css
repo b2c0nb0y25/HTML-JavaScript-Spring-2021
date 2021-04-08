@@ -1,0 +1,85 @@
+html,body{
+    margin: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #19F8FF;
+}
+
+#container{
+    width: 1000px;
+    height: 100%;
+    background-color: rgb(255, 255, 0);
+    color: #B3097C;
+}
+
+h1{
+    margin: 0;
+}
+
+#header{
+    height: 100px;
+    background-color:#B3097C;
+    text-align: center;
+    line-height: 100px;
+    color:#19F8FF;
+}
+
+#nav{
+    background-color: #B3097c;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 50px;
+    color: #19F8FF;
+}
+
+#content{
+    display: flex;
+    border: 1px ridge royalblue;
+    padding-bottom: 5px;
+}
+
+#footer{
+    line-height: 100px;
+    text-align: center;
+    border: 1px ridge royalblue;
+}
+
+#riddles{
+    padding: 15px;
+}
+
+.content-left{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+.content-right{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+/*Psuedo class for buttons in navigation*/
+.btn:link{
+    color: #19F8FF;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    line-height: 50px;
+}
+
+.btn:visited{
+    color: #19F8FF;
+}
+
+.btn:hover{
+    background-color: rgb(133, 25, 106);
+}
