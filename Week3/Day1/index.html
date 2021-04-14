@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Lab</title>
     <style>
-        html,body{
-            display: flex;
+        html,body {
             justify-content: center;
         }
 
-        #container{
+        .container {
+            justify-content: center;
             width: 800px;
-            height: 3000px;
+            height: 600px;
+            padding-bottom: 3000px;
             background-color: cadetblue;
-            color: deeppink;
         }
 
-        #box{
-            position: relative;
+        .box {
+            position: absolute;
             background-color: slategray;
             width: 100px;
             height: 100px;
-            top: 200px;
-            left: 100px;
+            top: 0px;
+            left: 360px;
         }
     </style>
 </head>
+
 <body>
-    <div id="container">
-        <div id="box">
+    <div class="container">
+        <div class="box">
+
+        </div>
+
+        <div class="box" style="background-color: chartreuse; top: 20px; left: 380px; z-index: 1;">
+
+        </div>
+
+        <div class="box" style="background-color: peru; top: 40px; left: 400px;">
 
         </div>
     </div>
+
+    <div class="container">
+
+    </div>
 </body>
+
 </html>
