@@ -73,6 +73,8 @@ hr{
     padding-right: 20px;
     margin: 0px 4px 0px 4px;
     line-height: 50px;
+    border: 3px ridge royalblue;
+    background-color: slategray;
 }
 
 .btn:visited{
