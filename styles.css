@@ -1,0 +1,88 @@
+body{
+    background-color: plum;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: royalblue;
+    display: flex;
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#container{
+    width: 1100px;
+    padding: 10px;
+    justify-content: center;
+    background-color: paleturquoise;
+    border: 3px ridge royalblue;
+    text-align: center;
+}
+
+h1{
+    width: 1050px;
+    padding: 10px;
+    text-align: center;
+    background-color: slategray;
+    border: 3px ridge royalblue;
+}
+
+.sections{
+    text-align: left;
+    width: 1050px;
+    padding: 10px;
+    background-color: slategray;
+    border: 3px ridge royalblue;
+}
+
+img{
+    border: 3px ridge royalblue;
+    width: 500px;
+    justify-content: center;
+}
+
+ul,ol{
+    display: table;
+    margin: 0 auto;
+}
+
+li{
+    text-align: left;
+}
+
+hr{
+    border: 1.5px solid royalblue;
+    background-color: royalblue;
+}
+
+/*Nav Bar/Buttons*/
+#nav-bar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    line-height: 50px;
+    color: royalblue;
+}
+
+.btn:link{
+    color: royalblue;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px 4px 0px 4px;
+    line-height: 50px;
+    border: 3px ridge royalblue;
+    background-color: slategray;
+}
+
+.btn:visited{
+    color: royalblue;
+}
+
+.btn:hover{
+    background-color: slategray;
+    border: 3px ridge royalblue;
+}

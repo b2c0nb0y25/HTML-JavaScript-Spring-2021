@@ -1,0 +1,101 @@
+html,body{
+    display: flex;
+    justify-content: center;
+    background-color: #999999;
+}
+
+#main-container{
+    width: 980px;
+    padding: 10px;
+    border: 5px ridge royalblue;
+    border-radius: 5px;
+    background-color: #666666;
+}
+
+header{
+    width: 960px;
+    height: 50px;
+    padding: 10px;
+    background-color: #333333;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Indie Flower', cursive;
+    border: 5px ridge royalblue;
+    border-radius: 5px;
+}
+
+nav{
+    width: 975px;
+    height: 50px;
+    background-color: #333333;
+    border: 5px ridge royalblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn:hover{
+    background-color: #555555;
+    padding: 0px 20px 0px 20px;
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    float: left;
+    width: 600px;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+aside{
+    float: left;
+    width: 340px;
+    padding: 10px;
+}
+
+footer{
+    width: 980px;
+    clear: both;
+    background-color: #333333;
+    color: whitesmoke;
+    text-align: center;
+    border: 5px ridge royalblue;
+    border-radius: 5px;
+}
+
+.title{
+    background-color: #333333;
+    border: 5px ridge royalblue;
+    border-radius: 5px;
+    padding: 5px 0px 5px 5px;
+    color: whitesmoke;
+}
+
+.copy{
+    color: whitesmoke;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+}
+
+hr{
+    background-color: royalblue;
+    border: 2.5px ridge royalblue;
+    border-radius: 5px;
+}
