@@ -100,6 +100,7 @@ function nextRiddle(id1, id2, id3, id4){
     document.getElementById(id1).innerHTML = riddlesLen
     document.getElementById(id2).innerHTML = ''
     riddleNumber = setNumber();
+    getRiddle(id1);
     }
 }
 
