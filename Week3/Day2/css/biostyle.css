@@ -45,11 +45,14 @@ nav{
     font-family: 'Indie Flower', cursive;
     padding-left: 20px;
     padding-right: 20px;
+    margin-right: 3px;
+    
 }
 
 .btn:hover{
     background-color: #555555;
     padding: 0px 20px 0px 20px;
+    box-shadow: inset 0px 0px 0px 2px royalblue;
 }
 
 h1{
