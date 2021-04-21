@@ -1,35 +1,35 @@
 html,body{
     display: flex;
     justify-content: center;
-    background-color: #999999;
+    background-color: rgba(13, 138, 235, 0.8);
+    background-image: url("1061.jpg");
+    
 }
 
 #main-container{
     width: 980px;
     padding: 10px;
-    border: 5px ridge royalblue;
+    border: 10px ridge #ffbe5f;
     border-radius: 5px;
-    background-color: #666666;
+    background-color: rgba(0, 40, 63, .8);
 }
 
 header{
-    width: 960px;
+    width: 970px;
     height: 50px;
-    padding: 10px;
-    background-color: #333333;
-    color: whitesmoke;
+    background-color: #0d8aeb;
+    color: #002840;
     text-align: center;
     line-height: 50px;
-    font-family: 'Indie Flower', cursive;
-    border: 5px ridge royalblue;
+    border: 5px solid #ffbe5f;
     border-radius: 5px;
 }
 
 nav{
-    width: 975px;
+    width: 970px;
     height: 50px;
-    background-color: #333333;
-    border: 5px ridge royalblue;
+    background-color: #0d8aeb;
+    border: 5px solid #ffbe5f;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -38,21 +38,20 @@ nav{
 .btn{
     width: 100px;
     height: 50px;
-    color: whitesmoke;
+    color: #002840;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
-    font-family: 'Indie Flower', cursive;
     padding-left: 20px;
     padding-right: 20px;
-    margin-right: 3px;
-    
+    margin-right: 10px;
 }
 
 .btn:hover{
-    background-color: #555555;
+    background-color: #002840;
     padding: 0px 20px 0px 20px;
-    box-shadow: inset 0px 0px 0px 2px royalblue;
+    box-shadow: inset 0px 0px 0px 2px #ffbe5f;
+    color: #0d8aeb;
 }
 
 h1{
@@ -64,41 +63,50 @@ section{
     float: left;
     width: 600px;
     padding: 10px;
-    font-family: 'Indie Flower', cursive;
+    color: #002840;
+}
+
+img{
+    border-bottom: 5px solid #ffbe5f;
+}
+
+.main{
+    background-color: #0d8aeb;
+    border: 5px solid #ffbe5f;
+    justify-content: center;
 }
 
 aside{
     float: left;
     width: 340px;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
+    color: #002840;
 }
 
 footer{
-    width: 980px;
+    width: 970px;
     clear: both;
-    background-color: #333333;
-    color: whitesmoke;
+    background-color: #0d8aeb;
+    color: #002840;
     text-align: center;
-    border: 5px ridge royalblue;
+    border: 5px solid #ffbe5f;
     border-radius: 5px;
 }
 
 .title{
-    background-color: #333333;
-    border: 5px ridge royalblue;
+    background-color: #0d8aeb;
+    border: 5px solid #ffbe5f;
     border-radius: 5px;
-    padding: 5px 0px 5px 5px;
-    color: whitesmoke;
+    color: #002840;
 }
 
 .copy{
-    color: whitesmoke;
-    font-family: 'Indie Flower', cursive;
+    color: #002840;
     font-size: 15px;
 }
 
 hr{
-    background-color: royalblue;
-    border: 2.5px ridge royalblue;
+    background-color: #ffbe5f;
+    border: 2.5px solid #ffbe5f;
     border-radius: 5px;
 }

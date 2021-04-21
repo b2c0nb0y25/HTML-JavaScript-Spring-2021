@@ -1,6 +1,6 @@
 var riddles = [
     "If you eat me, my sender will eat you. What am I?",
-    "How do you fit 10 horses into 9 stalls.",
+    "How do you fit 10 horses into 9 stalls?",
     "I look flat, but I am deep. In hidden realms I shelter. Lives I take, but food I offer. At times I am beautiful. I can be calm, angry and turbulent. I have no heart, but offer pleasure as well as death. No man can own me, yet I encompass what all men must have.",
     "What always ends everything?",
     "What has only two words, but thousands of letters?",
@@ -74,8 +74,7 @@ var riddlesAnswers = [
     'Answer: A Path.',
     'Answer: Charcoal.'];
 
-var riddleNumber = setNumber();
-
+var riddleNumber
 function showAnswer(id) {
     document.getElementById(id).innerHTML = riddlesAnswers[riddleNumber];
 }
@@ -97,6 +96,8 @@ function nextRiddle(id1, id2, id3, id4){
         document.getElementById(id4).style.cursor = 'not-allowed'
     }
     else{
+    document.getElementById(id3).toggleAttribute('disabled', false)
+    document.getElementById(id4).toggleAttribute('disabled', false)
     document.getElementById(id1).innerHTML = riddlesLen
     document.getElementById(id2).innerHTML = ''
     riddleNumber = setNumber();

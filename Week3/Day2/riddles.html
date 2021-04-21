@@ -25,22 +25,23 @@
             <a class="btn" href="#">Riddles</a>
         </nav>
 
-        <section style="justify-content: center; text-align: center; height: auto;">
+        <section style="width: 965px; justify-content: center; text-align: center;">
             <h2 class="title">Riddles</h2>
-            
+
             <hr>
 
-            <h2 style="height: 180px;" id="riddle">Welcome to the riddle page!</h2>
-            <br>
-            <h3 id="demo" style="margin: 0px; padding-bottom: 0px;">Press "Next Riddle" to get started!</h3>
-            <br>
-            <button id= "riddlebtn" onclick="getRiddle('riddle')">Show Riddle</button>
-            <button id= "answerbtn" onclick="showAnswer('demo')">Show Answer</button>
+            <div class="main">
+                <h2 id="riddle">Welcome to the riddle page!</h2>
+                <br>
+                <h3 id="demo" style="margin: 0px; padding-bottom: 0px;">Press "Next Riddle" to get started!</h3>
+                <br>
+                <button id="riddlebtn" onclick="getRiddle('riddle')" disabled hidden>Show Riddle</button>
+                <button id="answerbtn" onclick="showAnswer('demo')" disabled>Show Answer</button>
 
-            <br>
+                <br>
 
-            <button onclick="nextRiddle('riddle', 'demo', 'riddlebtn', 'answerbtn')">Next Riddle</button>
-
+                <button onclick="nextRiddle('riddle', 'demo', 'riddlebtn', 'answerbtn')">Next Riddle</button>
+            </div>
             <hr>
 
         </section>
