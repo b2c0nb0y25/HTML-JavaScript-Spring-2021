@@ -30,7 +30,7 @@ function main(){
     console.log('working');
 
     //update position
-    x += 1;
+    x += 100;
 
     if(x > canvas.width + 20){
         x = -100;
