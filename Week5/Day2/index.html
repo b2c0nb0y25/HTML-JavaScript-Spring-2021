@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 1 lab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            display: flex;
+            justify-content: center;
+            background-image: url('images/1061.jpg');
+            font-family: 'Zen Dots', cursive;
+        }
+
+        #canvas {
+            background-color: #0d8aeb;
+            border: 5px ridge #ffbe5f;
+            font-family: 'Zen Dots', cursive;
+            background-image: url('images/background.png');
+        }
+    </style>
 </head>
+
 <body>
-    <canvas id="canvas" width="800" height="600" style="border: 3px ridge royalblue;">
+    <canvas id="canvas" width="1024" height="768">
         The canvas element is not supported in your browser.
     </canvas>
     <script src="js/cargame.js"></script>
 </body>
+
 </html>

@@ -8,25 +8,29 @@ var timer = requestAnimationFrame(main);
 
 var xpos = 20;
 
-var start = 50;
-var finish = 750;
+var start = 58;
+var finish = 956;
 
 //bool for if game finishes
 
 var gameOver = true;
 
 //variable for image sprite
-var raceCar = new Image();
-raceCar.src = 'images/racecar.png';
-raceCar.onload = function () {
+var joker = new Image();
+joker.src = 'images/joker.png';
+var yu = new Image();
+yu.src = 'images/Yu_Sprite.png'
+var p3mc = new Image();
+p3mc.src = 'images/p3mc.png'
+joker.onload = function () {
     main();
 };
 
 //Fuel Variables
-var startFuel = randomNumber(200, canvas.width);
+var startFuel = randomNumber(100, 400);
 var fuel = startFuel;
 //variable for fuel bar
-var fullBarWidth = 300;
+var fullBarWidth = 512;
 
 //Countdown Variables
 var sec = 3;
@@ -46,9 +50,11 @@ function main() {
 
     if (gameOver) {
         ctx.fillStyle = 'black';
-        ctx.font = '30px Arial';
+        ctx.font = '30px Courier New';
         ctx.textAlign = 'center';
-        ctx.fillText('Press Space to Start', canvas.width / 2, canvas.height / 2)
+        ctx.strokeStyle = 'white'
+        ctx.fillText('Press Space to Start', canvas.width / 2, canvas.height / 2);
+        ctx.strokeText('Press Space to Start', canvas.width / 2, canvas.height / 2);
     } else {
         if (!gameOver && sec > 0) {
             runStartTimer();
@@ -58,7 +64,7 @@ function main() {
             //Conditional to see if the game has started
             if (gameOver == false && fuel > 0 && sec <= 0) {
                 //update position
-                xpos += 1;
+                xpos += 2;
                 fuel -= Math.random();
             }
         };
@@ -76,7 +82,7 @@ function main() {
     drawFinishLine();
 
     //draw car
-    drawCar();
+    // drawCar();
     drawCarImage();
 
     //draw fuel bar
@@ -84,8 +90,9 @@ function main() {
     drawFuelText();
 
     //determine if game is over
-    if(xpos >= finish + 10 || fuel <= 0){
-        drawResults();w
+    if(xpos >= finish || fuel <= 0){
+        fuel = 0;
+        drawResults();
     }
 }
 
@@ -93,7 +100,7 @@ function keyPressDown(e) {
     console.log(e.keyCode);
 
     //pressing spacebar
-    if (e.keyCode == 32) {
+    if (e.keyCode == 32) { 
         if(gameOver == false && fuel <= 0){
             restartGame();
         }
@@ -115,13 +122,17 @@ function keyPressUp(e) {
 }
 
 function drawFinishLine() {
-    ctx.fillStyle = 'red';
-    ctx.fillRect(finish, 50, 10, 500);
+    ctx.fillStyle = 'Black';
+    ctx.strokeStyle = 'white'
+    ctx.fillRect(finish, 50, 20, 668);
+    ctx.strokeRect(finish, 50, 20, 668)
 }
 
 function drawStartLine() {
-    ctx.fillStyle = 'green';
-    ctx.fillRect(start, 50, 10, 500);
+    ctx.fillStyle = 'White';
+    ctx.fillRect(start, 50, 20, 668);
+    ctx.strokeStyle = 'black';
+    ctx.strokeRect(start, 50, 20, 668);
 }
 
 function drawCar() {
@@ -130,14 +141,16 @@ function drawCar() {
 }
 
 function drawCarImage() {
-    ctx.drawImage(raceCar, xpos - 19, (canvas.height / 2 - 30), 50, 20);
+    ctx.drawImage(joker, xpos - 19, (canvas.height / 2 - 30), 36.8, 45);
+    ctx.drawImage(yu, xpos - 19, (5/6) * canvas.height,  22.9, 45)
+    ctx.drawImage(p3mc, xpos - 19, canvas.height / 6,  32, 45);
 }
 
 function drawFuelBar() {
     var barCurrentWidth = fullBarWidth * getFuelPercentage();
 
     ctx.fillStyle = 'black';
-    ctx.fillRect(start, 30, fullBarWidth, 10);
+    ctx.fillRect(start - 2, 28, fullBarWidth + 4, 14);
     if (fuel > 0) {
         ctx.fillStyle = 'orange';
         ctx.fillRect(start, 30, barCurrentWidth, 10);
@@ -165,9 +178,11 @@ function runStartTimer() {
 
 function drawStartTimer() {
     ctx.fillStyle = 'black';
-    ctx.font = '75px Arial';
+    ctx.strokeStyle = 'white';
+    ctx.font = '75px Courier New';
     ctx.textAlign = 'center';
     ctx.fillText(sec, canvas.width / 2, canvas.height / 2);
+    ctx.strokeText(sec, canvas.width / 2, canvas.height / 2);
 }
 
 function randomNumber(high, low) {
@@ -175,16 +190,20 @@ function randomNumber(high, low) {
 }
 
 function drawResults() {
-    if (xpos > finish) {
+    if (xpos >= finish) {
         ctx.fillStyle = 'black';
-        ctx.font = '75px Arial';
+        ctx.font = '75px Courier New';
         ctx.textAlign = 'center';
         ctx.fillText('You are win!', canvas.width / 2, canvas.height / 2);
+        ctx.strokeStyle = 'white'
+        ctx.strokeText('You are win!', canvas.width / 2, canvas.height / 2);
     } else {
         ctx.fillStyle = 'black';
-        ctx.font = '75px Arial';
+        ctx.font = '75px Courier New';
         ctx.textAlign = 'center';
         ctx.fillText('You lose! Good day sir.', canvas.width / 2, canvas.height / 2);
+        ctx.strokeStyle = 'white';
+        ctx.strokeText('You lose! Good day sir.', canvas.width / 2, canvas.height / 2);
     }
 }
 
