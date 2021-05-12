@@ -1,0 +1,14 @@
+html,body,nav{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+    border: 5px ridge royalblue;
+}
+
+button{
+    color: saddlebrown;
+    background-color: seagreen;
+    border-radius: 10px;
+}
