@@ -90,9 +90,3 @@ function playGame(playerChoice){
             break;
     }
 }
-
-function showResults(pChoice, cChoice, result){
-    document.getElementById('pChoice').innerHTML = pChoice;
-    document.getElementById('cChoice').innerHTML = cChoice;
-    document.getElementById('result').innerHTML = result;
-}
