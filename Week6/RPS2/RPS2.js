@@ -23,6 +23,7 @@ var btn = document.querySelectorAll('button')
 btn[0].addEventListener('click', function (e) { playGame(0) })
 btn[1].addEventListener('click', function (e) { playGame(1) })
 btn[2].addEventListener('click', function (e) { playGame(2) })
+
 //Game States for Finite State Machine (FSM)
 gameStates[0] = function () {
     ctx.fillStyle = 'black';
@@ -30,7 +31,7 @@ gameStates[0] = function () {
     ctx.fillStyle = 'blue';
     ctx.textAlign = 'center';
     ctx.font = '60px Arial';
-    ctx.fillText('Untitled HTML Game', canvas.width / 2, canvas.height / 2 - 25);
+    ctx.fillText('Rock, Paper, Scissors Arena!', canvas.width / 2, canvas.height / 2 - 25);
     ctx.font = '20px Arial';
     ctx.fillText('(Press Spacebar to Start)', canvas.width / 2, (canvas.height / 2) + 25);
 }
