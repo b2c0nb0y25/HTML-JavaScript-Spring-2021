@@ -1,0 +1,18 @@
+html,body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background-image: url('galaxy.jpg');
+}
+canvas{
+    border: 5px ridge white;
+}
+
+#container{
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Limelight', cursive;
+    background-color: black;
+}
+
